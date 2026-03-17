@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>euthanasia | Terminal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="terminal-window glow-border">
+      <div class="terminal-header">
+        <div id="clock">--:--:-- (Europe/Belarus) | euthanasia</div>
+        <div class="close-btn">[X]</div>
+      </div>
+
+      <div class="content">
+        <pre class="ascii-logo">
+               __  .__                                .__        
+  ____  __ ___/  |_|  |__ _____    ____ _____    _____|__|____   
+_/ __ \|  |  \   __\  |  \\__  \  /    \\__  \  /  ___/  \__  \  
+\  ___/|  |  /|  | |   Y  \/ __ \|   |  \/ __ \_\___ \|  |/ __ \_
+ \___  >____/ |__| |___|  (____  /___|  (____  /____  >__(____  /
+     \/                 \/     \/     \/     \/     \/        \/                                     
+        </pre>
+
+        <div class="prompt">
+          root@euthanasia:~$ <span>glow about_me.md</span>
+        </div>
+
+        <div class="info-box">
+          <div class="avatar glow-border">
+            <img
+              src="src/imgs/avatar.jpg"
+              alt="euthanasia avatar"
+              class="avatar-img"
+            />
+          </div>
+          <div class="details">
+            <h2 class="name glow-text">Эвтаназия</h2>
+            <p>
+              <span style="color: var(--accent-color)">[</span> Digital User <span style="color: var(--accent-color)">]</span>
+            </p>
+            <p>Status: Online</p>
+            <p>Location: Internet</p>
+          </div>
+        </div>
+
+
+
+        <div class="prompt">root@euthanasia:~$ <span>./socials.sh</span></div>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://t.me/violentimpuls" target="_blank"
+              >тгк</a
+            >
+          </li>
+          <li><a href="https://lolz.live/livvyaa/" target="_blank">лолз</a></li>
+          <li><a href="https://steamcommunity.com/id/livvyaa" target="_blank">steam</a></li>
+        </ul>
+        <div class="prompt">root@euthanasia:~$ <span id="cursor">_</span></div>
+      </div>
+
+<div id="steam-status" class="steam-card">
+    <div class="avatar-container">
+        <img id="steam-avatar" src="src/imgs/avatar.jpg" alt="Avatar">
+        <div id="status-indicator" class="indicator"></div>
+    </div>
+    <div class="info">
+        <div class="game-title-row">
+            <img id="game-small-icon" src="" alt="" class="game-icon-small" style="display: none;">
+            <div id="steam-name">Загрузка...</div>
+        </div>
+        <div id="steam-activity">Проверяю статус...</div>
+    </div>
+
+          <div class="terminal-footer">
+    <div class="crypto-footer-item" onclick="copyFooterAddr('UQBKUR913Qac6J0NB5VS6c0e0hurLAb-y3h5WDrIw8NkZlv6', this)">
+        <span class="net-label">[TON]</span>
+        <span class="copy-hint">copy</span>
+    </div>
+    <div class="crypto-footer-item" onclick="copyFooterAddr('TMEP4Vrxyjpr9riMQCggFFoYaKpjZCTNSY', this)">
+        <span class="net-label">[TRC20]</span>
+        <span class="copy-hint">copy</span>
+    </div>
+    <div id="footer-notify">COPIED_TO_CLIPBOARD</div>
+</div>
+</div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
