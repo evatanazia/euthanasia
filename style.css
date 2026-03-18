@@ -392,3 +392,13 @@ a:hover {
         transform: translateY(-5px); /* Плавно уходит вверх */
     }
 }
+
+/* Стили для любовного послания */
+.love-message {
+    color: var(--accent-color);
+    font-size: 11px;
+    margin-top: 6px;
+    font-style: italic;
+    text-shadow: 0 0 4px var(--accent-glow);
+    opacity: 0.85;
+}
