@@ -1,7 +1,7 @@
 :root {
   --bg-color: #080808; 
-  --accent-color: #976996; /* Новый цвет: приглушенный фиолетовый */
-  --accent-glow: rgba(151, 105, 150, 0.25); /* Свечение в тон основному цвету */
+  --accent-color: #976996;
+  --accent-glow: rgba(151, 105, 150, 0.25);
   --text-dim: #a0a0a0;
   --border-color: #2a2a2a;
   --font-main: "Courier New", Courier, monospace;
@@ -18,22 +18,19 @@ body {
   overflow-x: hidden;
 }
 
-/* --- Свечение --- */
 .glow-border {
   border: 1px solid var(--border-color);
   box-shadow:
     0 0 10px var(--accent-glow),
-    0 0 5px rgba(151, 105, 150, 0.2); /* Обновлено под новый цвет */
+    0 0 5px rgba(151, 105, 150, 0.2);
 }
 
 .glow-text {
   color: var(--accent-color);
   text-shadow:
     0 0 5px var(--accent-glow),
-    0 0 10px rgba(151, 105, 150, 0.2); /* Обновлено под новый цвет */
+    0 0 10px rgba(151, 105, 150, 0.2);
 }
-
-/* ---------------- */
 
 .terminal-window {
   position: relative;
@@ -91,19 +88,18 @@ body {
   color: var(--accent-color);
 }
 
+/* --- Убраны границы и фон здесь --- */
 .info-box {
   display: flex;
   gap: 20px;
-  border: 1px solid var(--border-color);
-  padding: 20px;
+  padding: 10px 0; /* Убрана рамка и фоновый цвет */
   margin: 10px 0 25px 0;
-  background: rgba(151, 105, 150, 0.05); /* Обновлено под новый цвет */
 }
 
 .avatar {
   width: 85px;
   height: 85px;
-  background: #151515;
+  background: transparent; /* Убран фон */
   flex-shrink: 0;
   overflow: hidden;
   display: flex;
