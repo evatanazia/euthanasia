@@ -1,94 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>euthanasia | Terminal</title>
+    <title>euthanasia | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-        <link
-      rel="icon"
-      type="image/png"
-      href="./src/imgs/imgonline-com-ua-Resize-mBRm4mLPt6949J.ico"
-    />
   </head>
   <body>
-    <div class="terminal-window glow-border">
-      <div class="terminal-header">
-        <div id="clock">--:--:-- (Europe/Belarus) | euthanasia</div>
-        <div class="close-btn">[X]</div>
-      </div>
-
-      <div class="content">
-        <pre class="ascii-logo">
-               __  .__                                .__        
-  ____  __ ___/  |_|  |__ _____    ____ _____    _____|__|____   
-_/ __ \|  |  \   __\  |  \\__  \  /    \\__  \  /  ___/  \__  \  
-\  ___/|  |  /|  | |   Y  \/ __ \|   |  \/ __ \_\___ \|  |/ __ \_
- \___  >____/ |__| |___|  (____  /___|  (____  /____  >__(____  /
-     \/                 \/     \/     \/     \/     \/        \/                                     
-        </pre>
-
-        <div class="prompt">
-          root@euthanasia:~$ <span>glow about_me.md</span>
+    <div class="main-container">
+      <header class="header">
+        <div class="clock-container">
+          <span id="clock">--:--:-- (Europe/Belarus)</span>
         </div>
+        <nav class="nav">
+          <a href="#about" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#socials" class="nav-link">Projects</a>
+          <a href="#socials" class="nav-link">Blog</a>
+          <a href="#contacts" class="nav-link">Contact</a>
+        </nav>
+      </header>
 
-        <div class="info-box">
-          <div class="avatar"> <img
-              src="src/imgs/avatar.jpg"
-              alt="euthanasia avatar"
-              class="avatar-img"
-            />
-          </div>
-          <div class="details">
-            <h2 class="name glow-text">Эвтаназия</h2>
-            <p>
-              <span style="color: var(--accent-color)">[</span> Digital User <span style="color: var(--accent-color)">]</span>
+      <main class="content">
+        <section id="about" class="about-section">
+          <div class="about-text-content">
+            <h1 class="main-title glow-text">Эвтаназия</h1>
+            <h2 class="sub-title">[ Digital User ]</h2>
+            <p class="about-description">
+              Привет. Я Эвтаназия. Моя локация — Интернет, и я всегда онлайн.
+              Люблю минимализм, темные интерфейсы и ASCII-арт. Исследую цифровые
+              миры и иногда пишу скрипты.
             </p>
-            <p>Status: Online</p>
-            <p>Location: Internet</p>
           </div>
-        </div>
+          <div class="hero-image-container">
+            <pre class="ascii-cat-logo">
+      ( \_ / )
+      ( o.o )  
+       > ^ < 
+    <span class="ascii-name">euthanasia</span>
+            </pre>
+            <div id="butterfly">🦋</div>
+          </div>
+        </section>
 
-        <div class="prompt">root@euthanasia:~$ <span>./socials.sh</span></div>
-
-        <ul class="social-list">
-          <li>
-            <a href="https://t.me/violentimpuls" target="_blank">tg channel</a>
-          </li>
-          <li><a href="https://lolz.live/livvyaa/" target="_blank">lolz</a></li>
-          <li><a href="https://steamcommunity.com/id/livvyaa" target="_blank">steam</a></li>
-        </ul>
-        <div class="prompt">root@euthanasia:~$ <span id="cursor">_</span></div>
-      </div>
-
-      <div id="steam-status" class="steam-card">
-        <div class="avatar-container">
-            <img id="steam-avatar" src="src/imgs/avatar.jpg" alt="Avatar">
-            <div id="status-indicator" class="indicator"></div>
-        </div>
-        <div class="info">
-            <div class="game-title-row">
-                <img id="game-small-icon" src="" alt="" class="game-icon-small" style="display: none;">
-                <div id="steam-name">Загрузка...</div>
+        <section id="status-card-section" class="skills-section">
+          <h2 class="section-title">Status & Info</h2>
+          <div class="card-grid">
+            <div class="card card-terminal">
+              <div class="card-header">
+                <h3>Terminal Info</h3>
+              </div>
+              <div class="card-content">
+                <div class="prompt">root@euthanasia:~$ <span>glow about_me.md</span></div>
+                <div class="card-details">
+                  <p>Status: <span class="status-online">Online</span></p>
+                  <p>Location: Internet</p>
+                </div>
+              </div>
             </div>
-            <div id="steam-activity">Проверяю статус...</div>
-            <div class="love-message glow-text">I love Sasha B.</div>
-        </div>
+            
+            <div class="card steam-card">
+              <div class="card-header">
+                <h3>Steam Activity</h3>
+              </div>
+              <div class="card-content-steam">
+                <div class="avatar-container">
+                    <img id="steam-avatar" src="src/imgs/avatar.jpg" alt="Avatar">
+                    <div id="status-indicator" class="indicator"></div>
+                </div>
+                <div class="steam-info">
+                    <div id="steam-name">Загрузка...</div>
+                    <div id="steam-activity">Проверяю...</div>
+                    <div class="love-message">I love Sasha B.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div class="terminal-footer">
-          <div class="crypto-footer-item" onclick="copyFooterAddr('UQBKUR913Qac6J0NB5VS6c0e0hurLAb-y3h5WDrIw8NkZlv6', this)">
-              <span class="net-label">[TON]</span>
-              <span class="copy-hint">copy</span>
+        <section id="socials" class="experience-section">
+          <h2 class="section-title">Socials / Links</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="card timeline-card">
+                <div class="prompt">root@euthanasia:~$ <span>./socials.sh</span></div>
+                <ul class="social-list">
+                  <li><a href="https://t.me/violentimpuls" target="_blank">tg channel</a></li>
+                  <li><a href="https://lolz.live/livvyaa/" target="_blank">lolz.live profile</a></li>
+                  <li><a href="https://steamcommunity.com/id/livvyaa" target="_blank">steam community</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="crypto-footer-item" onclick="copyFooterAddr('TMEP4Vrxyjpr9riMQCggFFoYaKpjZCTNSY', this)">
-              <span class="net-label">[TRC20]</span>
-              <span class="copy-hint">copy</span>
+        </section>
+
+        <section id="contacts" class="crypto-section">
+          <h2 class="section-title">Donate / Crypto</h2>
+          <div class="crypto-container-v2">
+              <button class="crypto-btn" onclick="copyAddr('UQBKUR913Qac6J0NB5VS6c0e0hurLAb-y3h5WDrIw8NkZlv6')">
+                <span class="crypto-icon">TON</span>
+                <span class="crypto-label">UQBKUR...Zlv6</span>
+              </button>
+              <button class="crypto-btn" onclick="copyAddr('TMEP4Vrxyjpr9riMQCggFFoYaKpjZCTNSY')">
+                <span class="crypto-icon">TRC20</span>
+                <span class="crypto-label">TMEP4V...NSY</span>
+              </button>
+              <div id="copy-popup">Адрес скопирован</div>
           </div>
-          <div id="footer-notify">COPIED_TO_CLIPBOARD</div>
-        </div>
-      </div>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <div class="prompt">root@euthanasia:~$ <span id="cursor">_</span></div>
+      </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
