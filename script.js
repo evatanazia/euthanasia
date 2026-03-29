@@ -5,7 +5,7 @@ const heroContainer = document.querySelector('.hero-image-container');
 let angle = 0;
 
 function moveButterfly() {
-    // Бабочка кружит над ником возле лапки котика
+    // Butterfly circles over the nick near the cat's paw
     const x = Math.cos(angle) * 85;
     const y = -40 + Math.sin(angle * 1.5) * 30; 
     
@@ -15,7 +15,7 @@ function moveButterfly() {
     const scaleX = Math.sin(angle * 1.5) > 0 ? -1 : 1;
     butterfly.style.transform = `translate(-50%, -50%) scaleX(${scaleX})`;
     
-    // Эффект пыльцы
+    // Pollen effect
     if (Math.random() > 0.6) {
         createTrail(butterfly.style.left, butterfly.style.top);
     }
@@ -46,7 +46,7 @@ async function updateStatus() {
 function init() {
     setInterval(() => {
         const now = new Date();
-        document.getElementById('clock').innerText = `${now.toLocaleTimeString('ru-RU')} (Europe/Belarus)`;
+        document.getElementById('clock').innerText = `${now.toLocaleTimeString('en-US')} (Europe/Belarus)`;
     }, 1000);
     updateStatus();
     moveButterfly();
