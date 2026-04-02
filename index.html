@@ -1,124 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>euthanasia</title>
-    <link rel="stylesheet" href="style.css" />
-        <link
-      rel="icon"
-      type="image/png"
-      href="./src/imgs/square-image.png"
-    />
-  </head>
-  <body>
-    <div class="main-container">
-      <header class="header">
-        <div class="clock-container">
-          <span id="clock">--:--:-- (Europe/Belarus)</span>
-        </div>
-        <nav class="nav">
-          <a href="#about" class="nav-link active">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#socials" class="nav-link">Projects</a>
-          <a href="#socials" class="nav-link">Blog</a>
-          <a href="#contacts" class="nav-link">Contact</a>
-        </nav>
-      </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euthanasia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./src/imgs/square-image.png">
+</head>
+<body>
 
-      <main class="content">
-        <section id="about" class="about-section">
-          <div class="about-text-content">
-            <h1 class="main-title glow-text">Euthanasia</h1>
-            <h2 class="sub-title">[ Digital User ]</h2>
-            <p class="about-description">
-              Hi. I'm Euthanasia. My location is the Internet, and I'm always online.
-              I love minimalism, dark interfaces, and ASCII art.
-            </p>
-          </div>
-          <div class="hero-image-container">
-            <pre class="ascii-cat-logo">
-   |\__/,|   (`\
- _.|o o  |_   ) )
--(((---(((--------
-            </pre>
-            <span class="ascii-name">euthanasia</span>
-            <div id="butterfly">🦋</div>
-          </div>
-        </section>
-
-        <section id="status-card-section" class="skills-section">
-          <h2 class="section-title">Status & Info</h2>
-          <div class="card-grid">
-            <div class="card card-terminal">
-              <div class="card-header">
-                <h3>Terminal Info</h3>
-              </div>
-              <div class="card-content">
-                <div class="prompt">root@euthanasia:~$ <span>glow about_me.md</span></div>
-                <div class="card-details">
-                  <p>Status: <span class="status-online">Online</span></p>
-                  <p>Location: Internet</p>
-                </div>
-              </div>
+    <div class="cassette-layout">
+        
+        <div class="panel left-flap">
+            <h1 class="band-logo">EUTHANASIA</h1>
+            
+            <div class="avatar-container">
+                <img src="./src/imgs/avatar.jpg" alt="Euthanasia" class="profile-img">
             </div>
             
-            <div class="card steam-card">
-              <div class="card-header">
-                <h3>Steam Activity</h3>
-              </div>
-              <div class="card-content-steam">
-                <div class="avatar-container">
-                    <img id="steam-avatar" src="src/imgs/avatar.jpg" alt="Avatar">
-                    <div id="status-indicator" class="indicator"></div>
-                </div>
-                <div class="steam-info">
-                    <div id="steam-name">Loading...</div>
-                    <div id="steam-activity">Checking...</div>
-                    <div class="love-message">I love Sasha B.</div>
-                </div>
-              </div>
+            <div class="bio-section">
+                <p class="bracket-title">[ DIGITAL USER ]</p>
+                <p>Hi. I'm Euthanasia. My location is the Internet, and I'm always online.</p>
+                <p>I love minimalism, dark interfaces, and ASCII art.</p>
             </div>
-          </div>
-        </section>
+        </div>
 
-        <section id="socials" class="experience-section">
-          <h2 class="section-title">Socials / Links</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="card timeline-card">
-                <div class="prompt">root@euthanasia:~$ <span>./socials.sh</span></div>
-                <ul class="social-list">
-                  <li><a href="https://t.me/violentimpuls" target="_blank">tg channel</a></li>
-                  <li><a href="https://lolz.live/livvyaa/" target="_blank">lolz.live profile</a></li>
-                  <li><a href="https://steamcommunity.com/id/livvyaa" target="_blank">steam community</a></li>
-                </ul>
-              </div>
+        <div class="panel spine">
+            <div class="spine-text">EUTHANASIA</div>
+        </div>
+
+        <div class="panel main-cover">
+            <div class="gothic-frame">
+                <div class="frame-inner">
+                    <div class="crest">† 𐕣 †</div>
+                    
+                    <div class="content-group">
+                        <div class="content-block">
+                            <h3>LINKS / SOCIALS</h3>
+                            <ul class="links-list">
+                                <li><a href="https://t.me/violentimpuls" target="_blank">tg channel</a></li>
+                                <li><a href="https://lolz.live/livvyaa/" target="_blank">lolz.live profile</a></li>
+                                <li><a href="https://steamcommunity.com/id/livvyaa" target="_blank">steam community</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>DONATE / CRYPTO</h3>
+                            <div class="crypto-list">
+                                <span onclick="copyAddr('UQBKUR913Qac6J0NB5VS6c0e0hurLAb-y3h5WDrIw8NkZlv6')">TON: UQBKUR...Zlv6</span>
+                                <span onclick="copyAddr('TMEP4Vrxyjpr9riMQCggFFoYaKpjZCTNSY')">TRC20: TMEP4V...NSY</span>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>VIRTUAL CHAMBER</h3>
+                            <p id="discord-status">Status: Checking...</p>
+                        </div>
+                    </div>
+
+                    <div class="branding">ASTRAL FAMINE CHAMBERS</div>
+                </div>
             </div>
-          </div>
-        </section>
+        </div>
 
-        <section id="contacts" class="crypto-section">
-          <h2 class="section-title">Donate / Crypto</h2>
-          <div class="crypto-container-v2">
-              <button class="crypto-btn" onclick="copyAddr('UQBKUR913Qac6J0NB5VS6c0e0hurLAb-y3h5WDrIw8NkZlv6')">
-                <span class="crypto-icon">TON</span>
-                <span class="crypto-label">UQBKUR...Zlv6</span>
-              </button>
-              <button class="crypto-btn" onclick="copyAddr('TMEP4Vrxyjpr9riMQCggFFoYaKpjZCTNSY')">
-                <span class="crypto-icon">TRC20</span>
-                <span class="crypto-label">TMEP4V...NSY</span>
-              </button>
-              <div id="copy-popup">Address copied</div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="prompt">root@euthanasia:~$ <span id="cursor">_</span></div>
-      </footer>
     </div>
+
+    <div id="copy-popup">Copied!</div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
