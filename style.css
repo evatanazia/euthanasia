@@ -31,7 +31,7 @@ body {
     width: 100%;
     max-width: 1200px;
     height: 750px;
-    border: 1px solid #111;
+    border: none; /* Граница удалена */
 }
 
 .panel {
@@ -44,7 +44,7 @@ body {
 
 .left-flap {
     width: 35%;
-    border-right: 1px dashed #333;
+    border-right: none; /* Разделитель удален */
     padding: 50px;
     text-align: center;
 }
@@ -65,7 +65,7 @@ body {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border: 1px solid #444;
+    border: none; /* Рамка аватара удалена */
     filter: grayscale(100%) contrast(1.1);
 }
 
@@ -86,7 +86,7 @@ body {
 
 .spine {
     width: 8%;
-    border-right: 1px dashed #333;
+    border-right: none; /* Разделитель удален */
     font-family: var(--gothic-font);
     font-size: 3rem;
     letter-spacing: 12px;
@@ -103,7 +103,7 @@ body {
 }
 
 .gothic-frame {
-    border: 1px solid #ffffff;
+    border: none; /* Граница рамки удалена */
     width: 100%;
     height: 100%;
     padding: 15px;
@@ -125,7 +125,7 @@ body {
 .gothic-frame::after { bottom: -15px; right: -15px; }
 
 .frame-inner {
-    border: 1px solid #333;
+    border: none; /* Внутренняя граница удалена */
     width: 100%;
     height: 100%;
     display: flex;
@@ -223,7 +223,6 @@ body {
     .left-flap, .spine, .main-cover {
         width: 100%;
         border: none;
-        border-bottom: 1px dashed #333;
     }
     .spine-text {
         transform: rotate(0);
