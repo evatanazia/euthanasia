@@ -9,10 +9,12 @@ async function updateStatus() {
         if (statusElement) {
             const s = data.discord_status;
             statusElement.innerText = `Status: ${s.charAt(0).toUpperCase() + s.slice(1)}`;
-            statusElement.style.color = (s === 'online') ? '#ffffff' : '#888888';
+            statusElement.style.color = (s === 'online' || s === 'dnd' || s === 'idle') ? '#ffffff' : '#888888';
         }
     } catch (e) { 
         console.error("Lanyard error:", e); 
+        const statusElement = document.getElementById('discord-status');
+        if (statusElement) statusElement.innerText = "Status: Unknown";
     }
 }
 
@@ -20,7 +22,10 @@ function copyAddr(text) {
     navigator.clipboard.writeText(text);
     const popup = document.getElementById('copy-popup');
     popup.style.display = 'block';
-    setTimeout(() => {
+    
+    if(window.copyTimeout) clearTimeout(window.copyTimeout);
+    
+    window.copyTimeout = setTimeout(() => {
         popup.style.display = 'none';
     }, 1500);
 }
