@@ -21,19 +21,18 @@ body {
     font-family: var(--serif-font);
     display: flex;
     justify-content: center;
-    /* Изменено: прижимаем контент к верху, а не к центру */
+    /* Поднимаем контент выше */
     align-items: flex-start; 
     min-height: 100vh;
-    /* Добавлен отступ сверху, чтобы блоки не касались края экрана */
-    padding-top: 40px; 
-    overflow-y: auto; /* Разрешаем прокрутку, если экран совсем маленький */
+    padding-top: 5vh; 
+    overflow: hidden;
 }
 
 .cassette-layout {
     display: flex;
-    width: 1100px; 
-    /* Немного уменьшена высота для компактности */
-    height: 680px; 
+    /* Уменьшенный размер для компактности */
+    width: 960px; 
+    height: 600px;
 }
 
 .panel {
@@ -45,40 +44,39 @@ body {
 }
 
 .left-flap {
-    width: 38%; 
-    padding: 20px 40px; /* Уменьшены вертикальные отступы */
+    width: 40%;
+    padding: 20px 40px;
     text-align: center;
-    margin-right: 40px; 
 }
 
 .band-logo {
     font-family: var(--gothic-font);
-    font-size: 4.8rem;
-    letter-spacing: 6px; 
-    margin-bottom: 30px; /* Уменьшен отступ */
+    font-size: 3.5rem; 
+    letter-spacing: 4px; 
+    margin-bottom: 25px;
     text-transform: uppercase;
 }
 
 .bio-section {
     font-family: var(--mono-font);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: #aaaaaa;
-    max-width: 360px;
+    max-width: 280px;
     line-height: 1.5;
 }
 
 .bracket-title {
     color: #ffffff;
     font-weight: bold;
-    margin-bottom: 20px;
-    letter-spacing: 3px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
 }
 
 .spine {
-    width: 12%; 
+    width: 8%;
     font-family: var(--gothic-font);
-    font-size: 2.8rem;
-    letter-spacing: 12px;
+    font-size: 2rem;
+    letter-spacing: 8px;
 }
 
 .spine-text {
@@ -88,9 +86,8 @@ body {
 }
 
 .main-cover {
-    width: 50%;
-    padding: 20px 40px; /* Уменьшены вертикальные отступы */
-    margin-left: 40px; 
+    width: 52%;
+    padding: 30px;
 }
 
 .gothic-frame {
@@ -104,15 +101,15 @@ body {
     content: "‡";
     position: absolute;
     background: #000;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
-.gothic-frame::before { top: -25px; left: -25px; }
-.gothic-frame::after { bottom: -25px; right: -25px; }
+.gothic-frame::before { top: -15px; left: -15px; }
+.gothic-frame::after { bottom: -15px; right: -15px; }
 
 .frame-inner {
     width: 100%;
@@ -121,37 +118,37 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
 .crest {
-    font-size: 2.4rem;
-    letter-spacing: 15px;
+    font-size: 2rem;
+    letter-spacing: 10px;
 }
 
 .content-group {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Уменьшен зазор между секциями */
+    gap: 15px;
 }
 
 .video-container {
     width: 100%;
-    margin-bottom: 0; /* Убран лишний отступ */
 }
 
 .video-player {
-    width: 380px; 
-    height: calc(380px * 9 / 16);
+    width: 280px;
+    height: calc(280px * 9 / 16);
     object-fit: cover;
     border: none;
+    outline: none;
 }
 
 .content-block h3 {
     font-family: var(--serif-font);
-    font-size: 1.2rem;
-    letter-spacing: 7px;
+    font-size: 1rem;
+    letter-spacing: 5px;
     color: #ffffff;
     margin-bottom: 10px;
 }
@@ -166,7 +163,7 @@ body {
 
 .links-list a {
     font-family: var(--mono-font);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: var(--dim-color);
     text-decoration: none;
     transition: 0.3s;
@@ -174,41 +171,41 @@ body {
 
 .links-list a:hover {
     color: #ffffff;
-    text-shadow: 0 0 15px #fff;
+    text-shadow: 0 0 10px #fff;
 }
 
 .crypto-list span {
     display: block;
     font-family: var(--mono-font);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: #ffffff;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     cursor: pointer;
 }
 
 #discord-status {
     font-family: var(--mono-font);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #ffffff;
 }
 
 .branding {
     font-family: var(--serif-font);
-    font-size: 0.9rem;
-    letter-spacing: 10px;
+    font-size: 0.75rem;
+    letter-spacing: 8px;
     color: #555555;
     text-transform: uppercase;
 }
 
 #copy-popup {
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     background: #ffffff;
     color: #000000;
-    padding: 15px 30px;
+    padding: 8px 16px;
     font-family: var(--mono-font);
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     display: none;
     z-index: 1000;
 }
