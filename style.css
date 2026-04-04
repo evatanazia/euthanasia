@@ -21,16 +21,19 @@ body {
     font-family: var(--serif-font);
     display: flex;
     justify-content: center;
+    /* Изменено: прижимаем контент к верху, а не к центру */
     align-items: flex-start; 
     min-height: 100vh;
-    padding-top: 50px; 
-    overflow: hidden;
+    /* Добавлен отступ сверху, чтобы блоки не касались края экрана */
+    padding-top: 40px; 
+    overflow-y: auto; /* Разрешаем прокрутку, если экран совсем маленький */
 }
 
 .cassette-layout {
     display: flex;
     width: 1100px; 
-    height: 720px;
+    /* Немного уменьшена высота для компактности */
+    height: 680px; 
 }
 
 .panel {
@@ -41,10 +44,9 @@ body {
     height: 100%;
 }
 
-/* Левая часть: добавил margin-right, чтобы отодвинуть от центра */
 .left-flap {
     width: 38%; 
-    padding: 40px;
+    padding: 20px 40px; /* Уменьшены вертикальные отступы */
     text-align: center;
     margin-right: 40px; 
 }
@@ -53,26 +55,25 @@ body {
     font-family: var(--gothic-font);
     font-size: 4.8rem;
     letter-spacing: 6px; 
-    margin-bottom: 50px;
+    margin-bottom: 30px; /* Уменьшен отступ */
     text-transform: uppercase;
 }
 
 .bio-section {
     font-family: var(--mono-font);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #aaaaaa;
     max-width: 360px;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 .bracket-title {
     color: #ffffff;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     letter-spacing: 3px;
 }
 
-/* Корешок: немного расширил саму зону */
 .spine {
     width: 12%; 
     font-family: var(--gothic-font);
@@ -86,17 +87,16 @@ body {
     color: var(--dim-color);
 }
 
-/* Правая часть: добавил margin-left, чтобы отодвинуть от центра */
 .main-cover {
     width: 50%;
-    padding: 40px;
+    padding: 20px 40px; /* Уменьшены вертикальные отступы */
     margin-left: 40px; 
 }
 
 .gothic-frame {
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 20px;
     position: relative;
 }
 
@@ -121,38 +121,39 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 35px;
+    padding: 20px;
     text-align: center;
 }
 
 .crest {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     letter-spacing: 15px;
 }
 
 .content-group {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px; /* Уменьшен зазор между секциями */
 }
 
 .video-container {
     width: 100%;
+    margin-bottom: 0; /* Убран лишний отступ */
 }
 
 .video-player {
-    width: 400px;
-    height: calc(400px * 9 / 16);
+    width: 380px; 
+    height: calc(380px * 9 / 16);
     object-fit: cover;
     border: none;
 }
 
 .content-block h3 {
     font-family: var(--serif-font);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 7px;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .links-list {
@@ -160,12 +161,12 @@ body {
 }
 
 .links-list li {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .links-list a {
     font-family: var(--mono-font);
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: var(--dim-color);
     text-decoration: none;
     transition: 0.3s;
@@ -179,21 +180,21 @@ body {
 .crypto-list span {
     display: block;
     font-family: var(--mono-font);
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     cursor: pointer;
 }
 
 #discord-status {
     font-family: var(--mono-font);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #ffffff;
 }
 
 .branding {
     font-family: var(--serif-font);
-    font-size: 1rem;
+    font-size: 0.9rem;
     letter-spacing: 10px;
     color: #555555;
     text-transform: uppercase;
